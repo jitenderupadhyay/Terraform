@@ -1,5 +1,5 @@
 output "s3_bucket_arn" {
-  value       = aws_s3_bucket.terraform_state.arn
+  value       = module.s3.s3_bucket_arn
   description = "The ARN of the S3 bucket"
 }
 
